@@ -1,20 +1,31 @@
-body{
-  background-color:lightgray;
+body {
+  background-color: lightgray;
   color: grey;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
   /* Same as above */
   font: normal 16px Arial, Helvetica, sans-serif;
-  line-height: 1.6em; 
+  line-height: 1.6em;
   margin: 0;
 }
 
-.container{
+.container {
   width: 80%;
+  /* when you use %, it's responsive unlike px */
   margin: auto;
 }
 
-.box-1{
+.box-1 {
   background-color: #333333;
+  border-right: 5px red solid;
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+  /* same as above, from border-right up to borderp-bottom*/
+  border: 5px red solid;
+  /* also, this overrides whatever is below border-bottom */
 }
