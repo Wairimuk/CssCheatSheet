@@ -1,3 +1,7 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
 body {
   background-color: lightgray;
   color: grey;
@@ -10,10 +14,35 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: greenyellow;
+}
+/* a:visited {
+  color: maroon;
+} */
+
 .container {
   width: 80%;
   /* when you use %, it's responsive unlike px */
   margin: auto;
+}
+
+.button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+.button:hover {
+  background: red;
+  color: white;
 }
 
 .box-1 {
@@ -25,7 +54,51 @@ body {
   border-width: 3px;
   border-bottom-width: 10px;
   border-top-style: dotted;
-  /* same as above, from border-right up to borderp-bottom*/
+  /* same as above, from border-right up to border-bottom*/
   border: 5px red solid;
   /* also, this overrides whatever is below border-bottom */
+
+  padding: 20px;
+
+  margin-top: 20px;
+  margin: 20px 0; /* this is margin top-bottom & right-left */
+}
+
+.box-2 {
+  border: 3px #ccc dotted;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px lightgoldenrodyellow solid;
+  padding: 10px;
+  border-radius: 15px; /* gives curved edges */
+}
+.categories h2 {
+  text-align: center;
+}
+.categories ul {
+  padding: 0;
+  /* padding-left: 20px; */
+  list-style: none; /* removes the bullet points in lists*/
+}
+.categories li {
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+  /* list-style-image: url(/images/checkmark.png); */
+}
+.my-form {
+  padding: 20px;
+}
+.my-form .form-group {
+  padding-bottom: 10px;
+}
+.my-form label {
+  display: block;
+}
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
 }
